@@ -8,4 +8,4 @@ define view TotalSalesByClient as
         salesOrder.client.ID as ![clientId],
         salesOrder.client.name as ![clientName],
         sum(product.salesPrice * product.quantity) as ![totalValue]
-    } group by salesOrder.client.ID;
+    } group by salesOrder.client.ID,salesOrder.client.name;

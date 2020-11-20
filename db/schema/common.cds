@@ -8,9 +8,10 @@ type STATUS_TYPE: String(1) enum {
 
 
 entity Base: cuid, managed {
+    key ID: String(36);
 }
 
 entity withTemporal{
-	validFrom: DateTime;
+    validFrom: DateTime;
 	validTo: DateTime;
 }

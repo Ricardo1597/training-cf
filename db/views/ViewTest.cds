@@ -1,10 +1,10 @@
-using {training.salesorder as salesorder} from '../schema/salesorder';
+using {training.salesorder as so} from '../schema/salesorder';
 
-namespace training.db.views;
+namespace training.views;
 
-define view SalesOrderItemByUser as 
+define view ViewTest as
 
-    select from salesorder.TblSalesOrderItem{
+    select from so.TblSalesOrderItem{
         ID,
         salesOrder.ID as ![salesOrderId],
         salesOrder.status as ![salesOrderStatus],

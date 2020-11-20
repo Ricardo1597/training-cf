@@ -12,6 +12,6 @@ entity TblSalesOrder: Base{
 
 entity TblSalesOrderItem: Base{
     status: STATUS_TYPE;
-    salesOrder: TblSalesOrder;
+    salesOrder: Association to TblSalesOrder;
     product: Association to TblProducts;
 }

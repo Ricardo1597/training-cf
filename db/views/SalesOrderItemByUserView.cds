@@ -1,9 +1,8 @@
 using {training.salesorder as salesorder} from '../schema/salesorder';
-using {training.user as user} from '../schema/user';
 
 namespace training.db.views;
 
-define view SalesOrderItemByUserView as 
+define view SalesOrderItemByUser as 
 
     select from salesorder.TblSalesOrderItem{
         ID,

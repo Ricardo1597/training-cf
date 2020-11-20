@@ -4,4 +4,5 @@ namespace trainingcf.db.views;
 
 define view AvailableProducts as
 
-    select from product.TblProducts as p where p.validFrom <= now() and p.validTo >= now();
+    select from product.TblProducts as p 
+        where p.validFrom <= now() and p.validTo >= now();

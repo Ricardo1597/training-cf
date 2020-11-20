@@ -1,6 +1,4 @@
 using {training.salesorder as salesorder} from '../schema/salesorder';
-using {training.products as products} from '../schema/products';
-using {training.clients as client} from '../schema/clients';
 
 namespace trainingcf.db.views;
 
